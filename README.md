@@ -1,0 +1,2 @@
+# ETicaretUygulamasii
+ ETicaretUygulamasi
