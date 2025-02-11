@@ -53,7 +53,7 @@ namespace ETicaretAPI.API.Controllers
 
             Order order = await _orderReadRepository.GetByIDAsync("0194f5c0-af79-7feb-aee6-fe64024a272c");
             order.Address = "Eskişehir";
-
+            order.Address = "Almanya";
             await _orderWriteRepository.SaveAsync();
         }
         /*[HttpGet("{id}")]
