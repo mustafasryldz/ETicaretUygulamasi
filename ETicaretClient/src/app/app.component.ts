@@ -13,9 +13,10 @@ declare var $: any;
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
-constructor(){}
+export class AppComponent implements OnInit {
   title = 'ETicaretClient';
+  constructor() { }
+
   /*constructor(private toastrService: CustomToastrService) {
     toastrService.message("merhaba", "Inmek", {
       messageType:ToastrMessageType.Success,
@@ -34,10 +35,10 @@ constructor(){}
       position:ToastrPosition.TopRight
     });
   }*/
-    ngOnInit(): void {
-      $.get("https://localhost:7040/api/products");
-      //jQuery.get("https://localhost:7040/api/products");
-    }
+  ngOnInit(): void {
+    //$.get("https://localhost:7040/api/products");
+    //jQuery.get("https://localhost:7040/api/products");
+  }
 }
 
 //$.get("https://localhost:7040/api/products")

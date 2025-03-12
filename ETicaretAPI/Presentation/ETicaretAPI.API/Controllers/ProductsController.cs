@@ -37,7 +37,7 @@ namespace ETicaretAPI.API.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
             await _productWriteRepository.AddAsync(new()
